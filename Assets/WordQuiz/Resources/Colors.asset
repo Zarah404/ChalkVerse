@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33b762a7796d94449896cd40528add32, type: 3}
+  m_Name: Colors
+  m_EditorClassIdentifier: 
+  questions:
+  - questionImage: {fileID: 21300000, guid: a90ac856b1933f94cbe802c44e082549, type: 3}
+    answer: black
+  - questionImage: {fileID: 21300000, guid: ecb477a1913faa643ae8e162bdaacd0d, type: 3}
+    answer: blue
+  - questionImage: {fileID: 21300000, guid: 410f313ed2bebb748bb93f74f2aa1f43, type: 3}
+    answer: grey
+  - questionImage: {fileID: 21300000, guid: 643e6ace42d4a2647a2b9b0520d5a846, type: 3}
+    answer: yellow
+  - questionImage: {fileID: 21300000, guid: 0323072837d8c9a46baec567953b7f07, type: 3}
+    answer: green
+  - questionImage: {fileID: 21300000, guid: 817b94e00e12acb42875af0be48741d0, type: 3}
+    answer: purple
+  - questionImage: {fileID: 21300000, guid: abd15c7a7e910264ba728d3ce51ac9ac, type: 3}
+    answer: white
