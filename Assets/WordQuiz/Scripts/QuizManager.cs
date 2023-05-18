@@ -4,11 +4,13 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class QuizManager : MonoBehaviour
 {
-    public static QuizManager instance; //Instance to make is available in other scripts without reference
-
+    public static QuizManager instance;
+    //Instance to make is available in other scripts without reference
+    public string sceneName;
     [SerializeField] private GameObject gameComplete;
     //Scriptable data which store our questions data
     [SerializeField] private QuizDataScriptable questionDataScriptable;
@@ -147,6 +149,7 @@ public class QuizManager : MonoBehaviour
                 {
                     Debug.Log("Game Complete"); //else game is complete
                     gameComplete.SetActive(true);
+                    SceneManager.LoadScene(sceneName);
                 }
             }
         }

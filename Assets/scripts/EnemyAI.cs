@@ -5,6 +5,7 @@ public class EnemyAI : MonoBehaviour
     public Transform player;
     public float speed = 3f;
     public float detectionDistance = 3f;
+    public Animator animator;
  
     
 
@@ -14,10 +15,12 @@ public class EnemyAI : MonoBehaviour
         {
             float distance = Vector2.Distance(transform.position, player.position);
 
-            if (distance <= detectionDistance)
+            if (distance < detectionDistance)
             {
                 float minXLimit = player.position.x - detectionDistance;
                 float maxXLimit = player.position.x + detectionDistance;
+                animator.SetTrigger("Walk");
+                
 
                 float targetX = Mathf.Clamp(player.position.x, minXLimit, maxXLimit);
                 Vector2 targetPosition = new Vector2(targetX, transform.position.y);
