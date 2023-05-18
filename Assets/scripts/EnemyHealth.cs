@@ -5,24 +5,27 @@ using UnityEngine.UI;
 
 public class EnemyHealth : MonoBehaviour
 {
-    public Slider slider ;
-    public Color low ;
-    public Color high ;
-    public Vector3 offset ;
+    public float maxHealth = 100f; // Maximum health value
+    private float currentHealth; // Current health value
+    private EnemyHealthBar healthBar; // Reference to the EnemyHealthBar script
 
-    // Start is called before the first frame update
-    public void SetHealth(float health , float maxHealth)
+    private void Start()
     {
-        slider.gameObject.SetActive(health < maxHealth);
-        slider.value = health ;
-        slider.maxValue = maxHealth;
-
-        slider.fillRect.GetComponentInChildren<Image>().color = Color.Lerp(low,high,slider.normalizedValue);
+        currentHealth = maxHealth;
+        healthBar = GetComponent<EnemyHealthBar>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void UpdateHealthBar()
     {
-        slider.transform.position = Camera.main.WorldToScreenPoint(transform.parent.position + offset);
+        float healthPercentage = currentHealth / maxHealth;
+        healthBar.SetHealth(healthPercentage);
+    }
+
+    // Example method for taking damage
+    public void TakeDamage(float damageAmount)
+    {
+        currentHealth -= damageAmount;
+        UpdateHealthBar();
+        // Perform other actions based on the updated health value
     }
 }

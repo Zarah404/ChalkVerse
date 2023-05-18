@@ -4,9 +4,8 @@ public class EnemyAI : MonoBehaviour
 {
     public Transform player;
     public float speed = 3f;
-    public float detectionDistance = 5f;
-    public float minXLimit = -5f;
-    public float maxXLimit = 5f;
+    public float detectionDistance = 3f;
+ 
     
 
     private void Update()
@@ -17,8 +16,8 @@ public class EnemyAI : MonoBehaviour
 
             if (distance <= detectionDistance)
             {
-                minXLimit = player.position.x - detectionDistance;
-                maxXLimit = player.position.x + detectionDistance;
+                float minXLimit = player.position.x - detectionDistance;
+                float maxXLimit = player.position.x + detectionDistance;
 
                 float targetX = Mathf.Clamp(player.position.x, minXLimit, maxXLimit);
                 Vector2 targetPosition = new Vector2(targetX, transform.position.y);
