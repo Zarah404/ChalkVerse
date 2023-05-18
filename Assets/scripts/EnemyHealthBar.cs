@@ -6,14 +6,17 @@ public class EnemyHealthBar : MonoBehaviour
     public Slider healthSlider;
     private Camera mainCamera;
     public Transform target;
-
+    
     private void Start()
     {
-        if (healthSlider != null)
+        if (healthSlider == null)
         {
-            healthSlider.value = 100f; // Set the initial health value (0 to 1)
-            mainCamera = Camera.main;
+            healthSlider = GetComponentInChildren<Slider>();
         }
+
+        mainCamera = Camera.main;
+
+        healthSlider.value = 100f;
     }
     public void SetHealth(float healthPercentage)
     {
@@ -21,13 +24,13 @@ public class EnemyHealthBar : MonoBehaviour
     }
     private void LateUpdate()
     {
-        if (target != null)
+        if (target != null && mainCamera != null)
         {
             Vector3 screenPosition = mainCamera.WorldToScreenPoint(target.position);
-            healthSlider.transform.position = screenPosition;
+            healthSlider.transform.position = screenPosition ;
         }
 
-        
+
     }
 }
 

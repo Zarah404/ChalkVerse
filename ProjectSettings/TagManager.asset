@@ -7,6 +7,8 @@ TagManager:
   - Hittable
   - Damage
   - Platform
+  - Water
+  - Spike
   layers:
   - Default
   - TransparentFX
