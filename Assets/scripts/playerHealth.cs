@@ -11,6 +11,7 @@ public class playerHealth : MonoBehaviour
     public Image healthBar;
     private float restartTimer = 0f;
     private float restartDelay = 1f;
+    
 
     // Start is called before the first frame update
     void Start()

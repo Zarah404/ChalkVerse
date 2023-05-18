@@ -1,18 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.RuleTile.TilingRuleOutput;
 
 public class playerMove : MonoBehaviour
 {
     public PlayerController controller;
     public Animator anim;
+    public GameObject projectilePrefab;
 
     public float runSpeed = 40f ;
+    public int damageAmount = 10;
 
     float horizontalMove = 0f ;
    
     bool jump = false ;
     bool crouch = false ;
+
 
     [SerializeField] private AudioSource Jump_Sound;
     /*[SerializeField] private AudioSource throw_Sound;
@@ -44,6 +48,12 @@ public class playerMove : MonoBehaviour
         }else  if(Input.GetButtonUp("Crouch"))
         {
             crouch = false ;
+        }
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
+            Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
+            anim.SetBool("Throwing", true);
+            SoundManagerScript.PlaySound("throw");
         }
         Trow();
         Bazzoka();
@@ -101,4 +111,5 @@ public class playerMove : MonoBehaviour
         controller.Move(horizontalMove * Time.fixedDeltaTime,crouch,jump);
         jump = false;
     }
+   
 }

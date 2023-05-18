@@ -984,6 +984,20 @@ MonoBehaviour:
   Hitpoints: 0
   MaxHitpoints: 5
   Healthbar: {fileID: 1914783056}
+--- !u!114 &190886186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 190886175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03be81155fdfe0b4fa9c092fa3ff5909, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pHealth: {fileID: 8646274354492083510}
+  damage: 10
 --- !u!1 &194333662
 GameObject:
   m_ObjectHideFlags: 0
@@ -3678,6 +3692,20 @@ MonoBehaviour:
   Hitpoints: 0
   MaxHitpoints: 5
   Healthbar: {fileID: 1873249212}
+--- !u!114 &561646850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 561646839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03be81155fdfe0b4fa9c092fa3ff5909, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pHealth: {fileID: 8646274354492083510}
+  damage: 10
 --- !u!1 &572453219
 GameObject:
   m_ObjectHideFlags: 0
@@ -8359,7 +8387,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3649260464517929893, guid: b3c7615b785bd2c4e9e7ca2676d2516a, type: 3}
       propertyPath: m_Name
-      value: Minotaur_01_Idle_000 (3)
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 3649260464517929898, guid: b3c7615b785bd2c4e9e7ca2676d2516a, type: 3}
       propertyPath: m_RootOrder
@@ -9195,7 +9223,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3649260464517929893, guid: b3c7615b785bd2c4e9e7ca2676d2516a, type: 3}
       propertyPath: m_Name
-      value: Minotaur_01_Idle_000 (5)
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 3649260464517929898, guid: b3c7615b785bd2c4e9e7ca2676d2516a, type: 3}
       propertyPath: m_RootOrder
@@ -14912,6 +14940,20 @@ MonoBehaviour:
   Hitpoints: 0
   MaxHitpoints: 5
   Healthbar: {fileID: 1050280876}
+--- !u!114 &1863369657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1863369646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03be81155fdfe0b4fa9c092fa3ff5909, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pHealth: {fileID: 8646274354492083510}
+  damage: 10
 --- !u!1 &1864329132
 GameObject:
   m_ObjectHideFlags: 0
@@ -15119,6 +15161,20 @@ MonoBehaviour:
   Hitpoints: 0
   MaxHitpoints: 5
   Healthbar: {fileID: 1234037128}
+--- !u!114 &1869676458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1869676447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03be81155fdfe0b4fa9c092fa3ff5909, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pHealth: {fileID: 8646274354492083510}
+  damage: 10
 --- !u!1 &1873249210
 GameObject:
   m_ObjectHideFlags: 0
@@ -16311,7 +16367,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -224.9, y: 159.5}
+  m_AnchoredPosition: {x: -224.9, y: 190}
   m_SizeDelta: {x: 289.4266, y: 16.4713}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1965989170
@@ -16919,7 +16975,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3649260464517929893, guid: b3c7615b785bd2c4e9e7ca2676d2516a, type: 3}
       propertyPath: m_Name
-      value: Minotaur_01_Idle_000 (4)
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 3649260464517929898, guid: b3c7615b785bd2c4e9e7ca2676d2516a, type: 3}
       propertyPath: m_RootOrder
@@ -17922,7 +17978,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3649260464517929893, guid: b3c7615b785bd2c4e9e7ca2676d2516a, type: 3}
       propertyPath: m_Name
-      value: Minotaur_01_Idle_000 (2)
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 3649260464517929898, guid: b3c7615b785bd2c4e9e7ca2676d2516a, type: 3}
       propertyPath: m_RootOrder
@@ -17930,7 +17986,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3649260464517929898, guid: b3c7615b785bd2c4e9e7ca2676d2516a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.17
+      value: 9.78
       objectReference: {fileID: 0}
     - target: {fileID: 3649260464517929898, guid: b3c7615b785bd2c4e9e7ca2676d2516a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -17976,6 +18032,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 5639326343338073631}
+    - target: {fileID: 3649260464517929902, guid: b3c7615b785bd2c4e9e7ca2676d2516a, type: 3}
+      propertyPath: detectionDistance
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b3c7615b785bd2c4e9e7ca2676d2516a, type: 3}
 --- !u!4 &4832666821819475633
@@ -18044,7 +18104,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 943344368463671712}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.2033825, y: -1.371, z: 0.02}
+  m_LocalPosition: {x: -1.19, y: -1.371, z: 0.02}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -18252,7 +18312,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 1935868042732030554}
   anim: {fileID: 7522381931731459473}
+  projectilePrefab: {fileID: 1145775143747595605, guid: ce56c427d857f22479028221eee58977, type: 3}
   runSpeed: 35
+  damageAmount: 10
   Jump_Sound: {fileID: 8646274354492083508}
 --- !u!114 &8646274354492083507
 MonoBehaviour:
@@ -18466,14 +18528,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 943344368463671712}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 10b56e14383c3514abcf3beee6dcfe48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
   maxHealth: 0
-  healthBar: {fileID: 0}
+  healthBar: {fileID: 1965989170}
 --- !u!1 &8978441206604188875
 GameObject:
   m_ObjectHideFlags: 0
